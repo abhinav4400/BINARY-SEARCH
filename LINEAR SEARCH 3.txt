@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+int main(void) {
+  int a,key,mid,beg,end,i;
+  int arr[10];
+  //length of array
+  printf("enter the length of array ");
+  scanf("%d",&a);
+  //array input
+  printf("Enter the array ",i);
+  for(i=0;i<a;i++){
+    scanf("%d",&arr[i]);
+  }
+  if(arr[0]<arr[a]){
+  beg=0;
+  end=a-1;
+  //key
+  printf("enter key ");
+  scanf("%d",&key);
+  while(beg<=end){
+    mid=(beg+end)/2;
+    if(key==arr[mid]){
+      printf("key found ");
+      break;
+    }
+    else if(key<mid){
+      end=mid-1;
+      }
+    else{
+      beg=mid+1;
+      }
+  }
+    }
+  else if(arr[0]>arr[a]){
+  beg=0;
+  end=a-1;
+  //key
+  printf("enter key ");
+  scanf("%d",&key);
+  while(beg<=end){
+    mid=(beg+end)/2;
+    if(key==arr[mid]){
+      printf("key found ");
+      break;
+    }
+    else if(key>mid){
+      end=mid-1;
+      }
+    else{
+      beg=mid+1;
+      }
+  }
+    }
+  else{
+    printf("key does'nt found");
+  }
+ return 0;
+}
