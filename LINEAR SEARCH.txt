@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(void) {
+  int a,key,i;
+  int arr[10];
+  //length of array
+  printf("enter the length of array ");
+  scanf("%d",&a);
+  //array input
+  printf("Enter the array",i);
+  for(i=0;i<a;i++){
+    scanf("%d",&arr[i]);
+  }
+  //key
+  printf("enter key ");
+  scanf("%d",&key);
+  
+  for(i=0;i<a;i++){
+    if(key==arr[i]){
+      printf("Key found at %d position ",i+1);
+    }
+  }
+  return 0;
+}
